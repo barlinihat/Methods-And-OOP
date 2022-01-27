@@ -9,7 +9,7 @@ namespace OOP3
 
         static void Main(string[] args)
         {
-            IKrediManager ihtiyacKrediManager = new İhtiyacKrediManager();
+            IKrediManager ihtiyacKrediManager = new IhtiyacKrediManager();
             IKrediManager tasitKrediManager = new TasitKrediManager();
             IKrediManager konutKrediManager = new KonutKrediManager();
 
@@ -21,7 +21,7 @@ namespace OOP3
 
             List<IKrediManager> krediler = new List<IKrediManager>() { ihtiyacKrediManager, tasitKrediManager };
 
-            //basvuruManager.KrediOnBilgilendirmesiYap(krediler);
+            //basvuruManager.KrediOnBilgilendirmesiYap(krediler); 
         }
     }
 }

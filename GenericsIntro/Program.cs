@@ -13,6 +13,12 @@ namespace GenericsIntro
             List<string> liste = new List<string>();
             Console.WriteLine(liste.Count);
 
+            Dictionary<int, string> Ogrenci = new Dictionary<int, string>();
+
+            Ogrenci.Add(10, "Ahmet");
+            Ogrenci.Add(11, "Mehmet");
+
+            Console.WriteLine(Ogrenci[10]);
         }
     }
 
@@ -36,5 +42,4 @@ namespace GenericsIntro
     //        get { return _array.Length; }
     //    }
 
-    }
 }
