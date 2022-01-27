@@ -10,7 +10,7 @@ namespace OOP2
     {
         public void Ekle(Musteri musteri)
         {
-
+            Console.WriteLine(musteri + "eklendi");
         }
     }
 }

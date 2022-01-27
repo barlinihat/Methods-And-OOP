@@ -29,6 +29,11 @@ namespace OOP2
             musteriManager.Ekle(musteri2);
             musteriManager.Ekle(musteri3);
             musteriManager.Ekle(musteri4);
+
+
+;
+            Musteri musterix = new Musteri();
+            musterix.MusteriNo = "asd";
         }
     }
 }
