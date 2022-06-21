@@ -10,7 +10,16 @@ namespace Interfaces
 
             //Demo();
 
-            Console.ReadLine();
+            ICustomerDal[] customerDals = new ICustomerDal[2]
+            {
+                new SqlServerCustomerDal(),
+                new OracleCustomerDal()
+            };
+            foreach (var customerDal in customerDals)
+            {
+                customerDal.Add();
+            }
+
         }
 
         private static void Demo()
@@ -23,6 +32,8 @@ namespace Interfaces
         {
             PersonManager manager = new PersonManager();
             manager.Add(new Customer { Id = 1, FirstName = "Dolby", LastName = "Tomas", Address = "Viyana" });
+
+            Console.ReadLine();
 
             Student student = new Student
             {
