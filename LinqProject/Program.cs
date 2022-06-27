@@ -28,10 +28,10 @@ namespace LinqProject
 
             Console.WriteLine(result);
 
-            //foreach (var product in result)
-            //{
-            //    Console.WriteLine(product.ProductName);
-            //}
+            foreach (var product in products)
+            {
+                Console.WriteLine(product.ProductName);
+            }
         }
 
 
